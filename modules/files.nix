@@ -314,6 +314,7 @@ in
 
           # Target path must be within $HOME.
           if [[ ! $target == $realOut* ]] ; then
+            echo "$target $realOut"
             echo "Error installing file '$relTarget' outside \$HOME" >&2
             exit 1
           fi
