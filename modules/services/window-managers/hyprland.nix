@@ -56,7 +56,7 @@ in {
       '';
     };
 
-    package = lib.mkPackageOption pkgs "hyprland" { };
+    package = lib.mkPackageOption pkgs "hyprland" { nullable = true; };
 
     finalPackage = lib.mkOption {
       type = lib.types.package;
